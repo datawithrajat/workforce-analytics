@@ -3,21 +3,36 @@
 ![Python](https://img.shields.io/badge/Python-Analytics-blue?style=for-the-badge&logo=python)
 ![Machine Learning](https://img.shields.io/badge/Machine-Learning-orange?style=for-the-badge)
 ![Statistics](https://img.shields.io/badge/Statistical-Testing-green?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+![Project](https://img.shields.io/badge/Project-HR%20Analytics-success?style=for-the-badge)
 
 ---
 
 # Project Overview
 
-This project focuses on analyzing employee behavior, workplace experience, compensation patterns, and organizational factors influencing employee attrition within an organization.
+This project focuses on analyzing employee behavior, workforce engagement, compensation patterns, overtime participation, and organizational factors influencing employee attrition.
 
-The analysis was performed using the IBM HR Analytics Employee Attrition dataset with the objective of identifying meaningful workforce insights through:
+The analysis was performed using the **IBM HR Analytics Employee Attrition Dataset** with the objective of identifying meaningful workforce insights using:
 
 - Descriptive Analytics
 - Statistical Hypothesis Testing
 - Predictive Modeling
 
-The project demonstrates how workforce analytics and machine learning can support employee retention strategies and organizational decision-making.
+The project demonstrates how workforce analytics and machine learning techniques can support employee retention strategies and organizational decision-making.
+
+---
+
+# Business Problem
+
+Employee attrition creates major organizational challenges including:
+- increased hiring costs,
+- workforce instability,
+- productivity loss,
+- and employee replacement overhead.
+
+The objective of this project was to identify:
+- factors influencing attrition,
+- workforce behavior patterns,
+- and statistically significant retention drivers.
 
 ---
 
@@ -27,9 +42,10 @@ The primary objectives of this project were to:
 
 - Analyze employee attrition behavior
 - Identify workforce factors affecting employee turnover
-- Validate workforce assumptions using statistical testing
+- Understand overtime participation patterns
+- Analyze salary and stock option distribution
+- Validate assumptions using statistical testing
 - Build a predictive model for employee attrition
-- Understand workforce retention patterns
 
 ---
 
@@ -37,10 +53,10 @@ The primary objectives of this project were to:
 
 | Technology | Purpose |
 |---|---|
-| Python | Data Analysis & Modeling |
+| Python | Data Analysis |
 | Pandas | Data Manipulation |
 | NumPy | Numerical Operations |
-| Matplotlib | Visualization |
+| Matplotlib | Data Visualization |
 | Seaborn | Statistical Visualization |
 | SciPy | Hypothesis Testing |
 | Scikit-Learn | Machine Learning |
@@ -54,14 +70,14 @@ Dataset Used:
 ## IBM HR Analytics Employee Attrition Dataset
 
 The dataset contains workforce-related information including:
-
-- Employee demographics
-- Compensation information
-- Job roles
-- Overtime participation
-- Satisfaction metrics
-- Work-life balance
-- Attrition status
+- employee demographics,
+- compensation,
+- job roles,
+- overtime participation,
+- satisfaction metrics,
+- work-life balance,
+- stock options,
+- and attrition behavior.
 
 ---
 
@@ -71,14 +87,14 @@ The dataset contains workforce-related information including:
 - What percentage of employees work overtime?
 - Which job roles demonstrate the highest overtime participation?
 - Does overtime participation differ across departments?
-- Do high-salary job roles also demonstrate high overtime participation?
+- Do high salary roles also demonstrate high overtime participation?
 
 ---
 
 ## Salary & Compensation Analysis
 - Which job roles receive the highest average monthly income?
 - Does compensation align with organizational hierarchy?
-- Which job roles receive comparatively lower compensation despite workload involvement?
+- Which roles receive lower compensation despite workload involvement?
 
 ---
 
@@ -90,17 +106,18 @@ The dataset contains workforce-related information including:
 ---
 
 ## Attrition Analysis
+- What percentage of employees leave the organization?
 - Which departments demonstrate the highest attrition?
-- Which job roles experience the highest attrition?
+- Which job roles experience the highest attrition percentage?
 - Are lower job levels more likely to leave the organization?
 
 ---
 
-## Hypothesis Testing Questions
+## Statistical Testing Questions
 - Does overtime participation significantly influence attrition?
 - Does work-life balance affect employee retention?
 - Does job satisfaction influence attrition?
-- Does job involvement affect employee retention?
+- Does job involvement affect retention?
 - Does marital status influence attrition?
 - Do salary hike and promotion timing significantly influence attrition?
 
@@ -124,16 +141,28 @@ Business Insights
 
 ---
 
+# Data Preparation
+
+Performed:
+- Data loading
+- Table merging
+- Data cleaning
+- Feature preparation
+- Dataset transformation
+
+Multiple HR-related tables were merged to create analytical and predictive datasets.
+
+---
+
 # Descriptive Workforce Analytics
 
 Performed workforce analysis on:
-
-- Employee overtime participation
-- Salary distribution
-- Stock option allocation
-- Department-level workforce patterns
-- Job-role compensation trends
-- Attrition behavior
+- employee overtime participation,
+- salary distribution,
+- stock option allocation,
+- department-level workforce patterns,
+- job-role compensation trends,
+- and attrition behavior.
 
 ---
 
@@ -187,15 +216,12 @@ Performed workforce analysis on:
 
 ---
 
-## Hypothesis Testing Summary
+# Key Descriptive Insights
 
-![Hypothesis Testing Summary](Hypothesis%20Testing%20Summary.jpg)
-
----
-
-## Confusion Matrix Heatmap
-
-![Confusion Matrix Heatmap](Confusion%20Matrix%20Heatmap.jpg)
+- Overtime participation was comparatively high across several operational job roles.
+- Lower job levels demonstrated higher attrition percentages.
+- Sales and Research-related departments demonstrated higher workforce turnover.
+- Compensation and stock option distribution generally aligned with organizational hierarchy.
 
 ---
 
@@ -213,7 +239,7 @@ to validate workforce assumptions statistically.
 
 The following variables demonstrated statistically significant relationships with employee attrition:
 
-| Factor | Result |
+| Factor | Statistical Result |
 |---|---|
 | OverTime | Significant |
 | JobSatisfaction | Significant |
@@ -225,7 +251,7 @@ The following variables demonstrated statistically significant relationships wit
 
 # Non-Significant Factors
 
-| Factor | Result |
+| Factor | Statistical Result |
 |---|---|
 | PercentSalaryHike | Not Significant |
 | YearsSinceLastPromotion | Not Significant |
@@ -234,17 +260,27 @@ The following variables demonstrated statistically significant relationships wit
 
 # Hypothesis Testing Summary
 
-![Hypothesis Testing Summary](visuals/hypothesis_testing_summary.jpg)
+![Hypothesis Testing Summary](Hypothesis%20Testing%20Summary.jpg)
 
 ---
 
-# Key Statistical Insights
+# Statistical Insights
 
-- Overtime participation demonstrated one of the strongest relationships with attrition.
-- Employees with lower work-life balance and lower job satisfaction showed higher attrition behavior.
-- Job involvement significantly influenced workforce retention.
-- Single employees demonstrated comparatively higher attrition levels.
-- Compensation-growth variables alone did not strongly explain workforce attrition behavior.
+The statistical analysis suggested that:
+- employee workload pressure,
+- work-life imbalance,
+- employee engagement,
+- and workplace satisfaction
+
+demonstrate meaningful influence on workforce retention behavior.
+
+OverTime demonstrated one of the strongest relationships with attrition.
+
+In contrast:
+- salary hike percentage,
+- and promotion timing
+
+did not independently demonstrate statistically significant relationships with attrition.
 
 ---
 
@@ -252,14 +288,14 @@ The following variables demonstrated statistically significant relationships wit
 
 ## Logistic Regression Model
 
-A Logistic Regression model was developed to predict employee attrition behavior using:
+A Logistic Regression model was developed to predict employee attrition behavior using workforce-related features such as:
 
-- Overtime participation
-- Job Satisfaction
-- Work-Life Balance
-- Job Involvement
-- Salary Hike Percentage
-- Marital Status
+- OverTime
+- JobSatisfaction
+- WorkLifeBalance
+- JobInvolvement
+- PercentSalaryHike
+- MaritalStatus
 
 ---
 
@@ -274,19 +310,18 @@ The model demonstrated strong capability in predicting employee retention behavi
 
 # Confusion Matrix Heatmap
 
-![Confusion Matrix](visuals/confusion_matrix_heatmap.jpg)
+![Confusion Matrix Heatmap](Confusion%20Matrix%20Heatmap.jpg)
 
 ---
 
 # Confusion Matrix Interpretation
 
 The model correctly predicted:
-- 247 employees who stayed
-- 6 employees who left
+- employees who remained within the organization,
+- and several attrition cases successfully.
 
 However:
-- 33 attrition cases were missed
-- indicating lower prediction capability for attrition employees.
+- some attrition employees were incorrectly classified as retained employees.
 
 This behavior may result from:
 ## Class Imbalance
@@ -294,26 +329,29 @@ where non-attrition employees significantly outnumber attrition employees.
 
 ---
 
-# Final Conclusion
+# Final Project Conclusion
 
-This project demonstrates how workforce analytics, statistical validation, and machine learning techniques can collectively support organizational decision-making and employee retention strategies.
+This project demonstrates how:
+- workforce analytics,
+- statistical validation,
+- and machine learning techniques
+
+can collectively support organizational decision-making and employee retention strategies.
 
 The findings suggest that:
+- employee experience,
+- workplace engagement,
+- work-life balance,
+- organizational involvement,
+- and workload-related pressure
 
-- Employee experience
-- Workplace engagement
-- Work-life balance
-- Organizational involvement
-- Workload-related pressure
-
-play a more important role in workforce retention than compensation-growth factors alone.
+play a more important role in workforce retention than compensation-growth variables alone.
 
 The project successfully combines:
-
-- Descriptive Analytics
-- Business Storytelling
-- Statistical Hypothesis Testing
-- Predictive Modeling
+- descriptive analytics,
+- business storytelling,
+- statistical hypothesis testing,
+- and predictive modeling
 
 to create a comprehensive HR Analytics case study.
 
@@ -322,19 +360,18 @@ to create a comprehensive HR Analytics case study.
 # Future Improvements
 
 Potential future enhancements may include:
-
-- Advanced machine learning models
-- Class balancing techniques
-- Feature engineering
-- Hyperparameter tuning
-- Interactive dashboards using Power BI or Streamlit
+- advanced machine learning models,
+- class balancing techniques,
+- feature engineering,
+- hyperparameter tuning,
+- and interactive dashboards using Power BI or Streamlit.
 
 ---
 
 # Author
 
-## DatawithRajat
+## datawithRajat
 
-Data Analytics | Workforce Analytics | Statistical Analysis | Machine Learning
+### Data Analytics | Workforce Analytics | Statistical Analysis | Machine Learning
 
 ---
