@@ -141,31 +141,61 @@ Performed workforce analysis on:
 
 ## Employee Overtime Distribution
 
-![Overtime Distribution](visuals/employee_overtime_distribution.jpg)
+![Employee Overtime Distribution](Employee%20overtime%20distibution.jpg)
+
+---
+
+## Percentage of Employees Working Overtime
+
+![Percentage of Employees Overtime](Percentage%20of%20employees%20Overtime.jpg)
+
+---
+
+## Job Roles Working Overtime
+
+![Job Roles Working Overtime](Job%20Roles%20Working%20Overtime.jpg)
+
+---
+
+## Average Monthly Income
+
+![Average Monthly Income](Average%20Monthly%20Income.jpg)
 
 ---
 
 ## Salary and Overtime Comparison
 
-![Salary Overtime Comparison](visuals/salary_overtime_comparison.jpg)
+![Salary and Overtime Comparison](Salary%20and%20OverTime%20Comparision.jpg)
 
 ---
 
 ## Attrition Percentage by Department
 
-![Department Attrition](visuals/attrition_department.jpg)
+![Attrition Percentage by Department](Attrition%20Percantage%20By%20Department.jpg)
 
 ---
 
 ## Attrition Percentage by Job Role
 
-![Job Role Attrition](visuals/attrition_job_role.jpg)
+![Attrition Percentage by Job Role](Attrition%20Percantage%20by%20job%20rol.jpg)
 
 ---
 
 ## Attrition Percentage by Job Level
 
-![Job Level Attrition](visuals/attrition_job_level.jpg)
+![Attrition Percentage by Job Level](Attrition%20Percantage%20by%20job%20level.jpg)
+
+---
+
+## Hypothesis Testing Summary
+
+![Hypothesis Testing Summary](Hypothesis%20Testing%20Summary.jpg)
+
+---
+
+## Confusion Matrix Heatmap
+
+![Confusion Matrix Heatmap](Confusion%20Matrix%20Heatmap.jpg)
 
 ---
 
